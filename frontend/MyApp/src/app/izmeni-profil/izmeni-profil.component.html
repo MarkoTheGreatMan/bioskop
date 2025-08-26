@@ -1,0 +1,42 @@
+<div class="container text-center registracija-container">
+  <h1>Izmeni Profil</h1>
+  <p>Izmenite svoje podatke ispod.</p>
+
+  <form [formGroup]="izmeniProfilForm" (ngSubmit)="onSubmit()">
+    <input type="text" formControlName="ime" placeholder="Ime" />
+    <div *ngIf="izmeniProfilForm.get('ime')?.touched && izmeniProfilForm.get('ime')?.invalid" class="error">
+      Ime je obavezno.
+    </div>
+
+    <input type="text" formControlName="prezime" placeholder="Prezime" />
+    <div *ngIf="izmeniProfilForm.get('prezime')?.touched && izmeniProfilForm.get('prezime')?.invalid" class="error">
+      Prezime je obavezno.
+    </div>
+
+    <input type="email" formControlName="email" placeholder="Email" />
+    <div *ngIf="izmeniProfilForm.get('email')?.touched && izmeniProfilForm.get('email')?.invalid" class="error">
+      <div *ngIf="izmeniProfilForm.get('email')?.errors?.['required']">Email je obavezan.</div>
+      <div *ngIf="izmeniProfilForm.get('email')?.errors?.['email']">Email nije validan.</div>
+    </div>
+
+    <input type="text" formControlName="telefon" placeholder="Telefon" />
+
+    <input type="text" formControlName="adresa" placeholder="Adresa" />
+
+    <div class="zanrovi-section">
+      <label>Omiljeni žanrovi:</label>
+      <div *ngFor="let zanr of sviZanrovi" class="checkbox-item">
+        <label>
+          {{ zanr }}
+          <input type="checkbox" [value]="zanr" (change)="onZanrChange(zanr, $event)" [checked]="omiljeniZanrovi.includes(zanr)" />
+
+        </label>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button type="submit" class="btn-primary" [disabled]="izmeniProfilForm.invalid">Sačuvaj promene</button>
+      <button type="button" class="btn-secondary" (click)="otkazi()">Otkaži</button>
+    </div>
+  </form>
+</div>

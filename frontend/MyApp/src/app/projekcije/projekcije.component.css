@@ -1,0 +1,91 @@
+.projekcija-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.2);
+}
+
+.projekcija-table th,
+.projekcija-table td {
+  border: 1px solid #333;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.projekcija-table th {
+  font-weight: bold;
+}
+
+
+.projekcija-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+.projekcija-table th,
+.projekcija-table td {
+  border: 1px solid #333;
+  padding: 8px 12px;
+  text-align: center;
+  vertical-align: middle;
+  overflow-wrap: break-word;
+}
+
+.projekcija-table th:nth-child(1),
+.projekcija-table td:nth-child(1) {
+  min-width: 120px;
+}
+.projekcija-table th:nth-child(2),
+.projekcija-table td:nth-child(2) {
+  min-width: 220px;
+  text-align: left;
+}
+.projekcija-table th:nth-child(3),
+.projekcija-table td:nth-child(3) {
+  min-width: 110px;
+}
+.projekcija-table th:nth-child(4),
+.projekcija-table td:nth-child(4) {
+  min-width: 120px;
+}
+.projekcija-table th:nth-child(5),
+.projekcija-table td:nth-child(5) {
+  min-width: 140px;
+}
+.projekcija-table th:nth-child(6),
+.projekcija-table td:nth-child(6) {
+  min-width: 140px;
+  text-align: left;
+}
+.projekcija-table th:nth-child(7),
+.projekcija-table td:nth-child(7) {
+  min-width: 90px;
+}
+.projekcija-table th:nth-child(8),
+.projekcija-table td:nth-child(8) {
+  min-width: 140px;
+}
+.projekcija-table th:nth-child(9),
+.projekcija-table td:nth-child(9) {
+  min-width: 90px;
+}
+
+
+.btn-secondary {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+

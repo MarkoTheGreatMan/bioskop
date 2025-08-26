@@ -1,0 +1,32 @@
+<div class="container text-center mt-4" *ngIf="film">
+  <h1>🎥 Pregled: {{ film.naziv }}</h1>
+
+  <h2 class="mt-4">💬 Komentari i ocene</h2>
+
+  <div *ngIf="komentariFiltrirani.length > 0; else nemaKomentara">
+    <table class="projekcija-table table table-striped mt-3">
+      <thead>
+        <tr>
+          <th>👤 Korisnik</th>
+          <th>⭐ Ocena</th>
+          <th>💬 Komentar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let k of komentariFiltrirani">
+          <td>{{ k.username }}</td>
+          <td>{{ k.ocena }} / 10</td>
+          <td class="text-start">{{ k.komentar }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <ng-template #nemaKomentara>
+    <p class="alert alert-info mt-3">Još nema komentara za ovaj film.</p>
+  </ng-template>
+</div>
+
+<div class="container mt-4 text-center" *ngIf="!film">
+  <p class="text-danger">Nema odabranog filma za pregled.</p>
+</div>

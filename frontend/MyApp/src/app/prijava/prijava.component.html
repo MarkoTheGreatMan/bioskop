@@ -1,0 +1,28 @@
+<div class="container">
+  <h2>Prijava</h2>
+  <form [formGroup]="prijavaForm" (ngSubmit)="prijaviSe()">
+    <label for="username" class="label">Korisničko ime</label>
+    <input type="text" id="username" class="form-input" formControlName="username" placeholder="Unesite korisničko ime" />
+    <div *ngIf="prijavaForm.get('username')?.invalid && (prijavaForm.get('username')?.touched || prijavaForm.get('username')?.dirty)" class="error">
+      Korisničko ime je obavezno.
+    </div>
+
+    <label for="password" class="label">Lozinka</label>
+    <input type="password" id="password" class="form-input" formControlName="password" placeholder="Unesite lozinku" />
+    <div *ngIf="prijavaForm.get('password')?.invalid && (prijavaForm.get('password')?.touched || prijavaForm.get('password')?.dirty)" class="error">
+      Lozinka je obavezna.
+    </div>
+    <div *ngIf="errorMessage" class="error" style="margin-top: 12px; margin-bottom: 12px">
+      {{ errorMessage }}
+    </div>
+
+    <div class="buttons">
+      <button type="submit" class="btn-primary" [disabled]="prijavaForm.invalid">Prijavi se</button>
+    </div>
+
+  </form>
+
+  <p style="margin-top: 16px; margin-bottom: 16px">Nemate nalog?
+    <a routerLink="/registracija">Registrujte se</a>
+  </p>
+</div>

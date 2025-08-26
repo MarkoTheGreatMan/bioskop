@@ -1,0 +1,48 @@
+<div class="container mt-4" *ngIf="rez">
+  <h2>Ocenite film: {{ rez.nazivFilma }}</h2>
+
+  <form #komentarForm="ngForm" (ngSubmit)="submitKomentar()" class="mt-3">
+
+    <div class="mb-3">
+      <label for="ocena" class="form-label">Ocena (0-10):</label>
+      <input
+        type="number"
+        id="ocena"
+        name="ocena"
+        class="form-control"
+        [(ngModel)]="ocena"
+        min="0"
+        max="10"
+        required
+        #ocenaInput="ngModel"
+      >
+      <div class="text-danger" *ngIf="ocenaInput.invalid && ocenaInput.touched">
+        Molimo unesite ocenu od 0 do 10.
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="komentar" class="form-label">Komentar:</label>
+      <textarea
+        id="komentar"
+        name="komentar"
+        class="form-control"
+        rows="4"
+        [(ngModel)]="komentar"
+        placeholder="Napišite svoj komentar..."
+        required
+        #komentarInput="ngModel"
+      ></textarea>
+      <div class="text-danger" *ngIf="komentarInput.invalid && komentarInput.touched">
+        Komentar ne može biti prazan.
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="komentarForm.invalid">Pošalji komentar</button>
+  </form>
+
+</div>
+
+<div class="container mt-4" *ngIf="!rez">
+  <p>Nema izabrane rezervacije za ocenjivanje.</p>
+</div>

@@ -1,0 +1,18 @@
+<div class="container text-center">
+  <h1>Moj Profil</h1>
+
+  <div class="user-info" style="text-align: left; color: #cccccc; margin-bottom: 30px;">
+    <p><strong>Ime i prezime:</strong> {{ korisnik.ime }} {{ korisnik.prezime }}</p>
+    <p><strong>Email:</strong> {{ korisnik.email }}</p>
+    <p><strong>Telefon:</strong> {{ korisnik.telefon }}</p>
+    <p><strong>Adresa:</strong> {{ korisnik.adresa }}</p>
+    <p><strong>Omiljeni žanrovi:</strong> {{ korisnik.omiljeniZanrovi.join(', ') }}</p>
+  </div>
+
+  <div class="buttons" style="justify-content: center; flex-wrap: wrap;">
+    <button routerLink="/projekcije" class="btn-primary">🎟️ Pretraži i rezerviši filmove</button>
+    <button routerLink="/korpa" class="btn-primary">🛒 Pogledaj korpu</button>
+    <button routerLink="/izmeni-profil" class="btn-primary">✏️ Izmeni profil</button>
+    <button (click)="logout()" class="btn-secondary" style="margin-top: 10px;">🚪 Odjavi se</button>
+  </div>
+</div>

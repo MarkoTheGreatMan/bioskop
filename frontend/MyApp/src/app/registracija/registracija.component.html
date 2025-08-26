@@ -1,0 +1,52 @@
+<div class="container text-center registracija-container">
+  <h1>Registracija</h1>
+  <p>Molimo popunite formular za kreiranje naloga.</p>
+
+  <form [formGroup]="registracijaForm" (ngSubmit)="onSubmit()">
+    <input type="text" formControlName="ime" placeholder="Ime" />
+    <div *ngIf="registracijaForm.get('ime')?.touched && registracijaForm.get('ime')?.invalid" class="error">
+      Ime je obavezno.
+    </div>
+
+    <input type="text" formControlName="prezime" placeholder="Prezime" />
+    <div *ngIf="registracijaForm.get('prezime')?.touched && registracijaForm.get('prezime')?.invalid" class="error">
+      Prezime je obavezno.
+    </div>
+
+    <input type="email" formControlName="email" placeholder="Email" />
+    <div *ngIf="registracijaForm.get('email')?.touched && registracijaForm.get('email')?.invalid" class="error">
+      <div *ngIf="registracijaForm.get('email')?.errors?.['required']">Email je obavezan.</div>
+      <div *ngIf="registracijaForm.get('email')?.errors?.['email']">Email nije validan.</div>
+    </div>
+
+    <input type="text" formControlName="telefon" placeholder="Telefon" />
+    <input type="text" formControlName="adresa" placeholder="Adresa" />
+
+    <div class="zanrovi-section">
+      <label>Omiljeni žanrovi:</label>
+      <div *ngFor="let zanr of zanrovi" class="checkbox-item">
+
+        <label>
+          {{ zanr }}
+          <input type="checkbox" [value]="zanr" (change)="onZanrChange(zanr, $event)" />
+
+        </label>
+      </div>
+    </div>
+
+    <input type="text" formControlName="username" placeholder="Korisničko ime" />
+    <div *ngIf="registracijaForm.get('username')?.touched && registracijaForm.get('username')?.invalid" class="error">
+      Korisničko ime je obavezno.
+    </div>
+
+    <input type="password" formControlName="password" placeholder="Lozinka" />
+    <div *ngIf="registracijaForm.get('password')?.touched && registracijaForm.get('password')?.invalid" class="error">
+      Lozinka je obavezna.
+    </div>
+
+    <div class="buttons">
+      <button type="submit" class="btn-primary">Registruj se</button>
+      <button type="button" class="btn-secondary">Nazad</button>
+    </div>
+  </form>
+</div>

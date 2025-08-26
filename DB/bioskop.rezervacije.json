@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "6893198f31c325125ca2a860"
+  },
+  "ulogovaniKorisnik": "elena",
+  "nazivFilma": "Senka u Noći",
+  "cenaKarte": 550,
+  "termin": {
+    "$date": "2025-08-02T18:00:00.000Z"
+  },
+  "status": "Rezervisano"
+},
+{
+  "_id": {
+    "$oid": "689a1d4a40fc5cc9cb05e2f4"
+  },
+  "ulogovaniKorisnik": "elena",
+  "nazivFilma": "Robot iz Priboja",
+  "cenaKarte": 500,
+  "termin": {
+    "$date": "2025-08-02T19:00:00.000Z"
+  },
+  "status": "Odgledano"
+},
+{
+  "_id": {
+    "$oid": "689a291a876fb5053a6696bd"
+  },
+  "ulogovaniKorisnik": "f",
+  "nazivFilma": "Robot iz Priboja",
+  "cenaKarte": 500,
+  "termin": {
+    "$date": "2025-08-05T21:00:00.000Z"
+  },
+  "status": "Odgledano"
+},
+{
+  "_id": {
+    "$oid": "68a362d4b3b7eff335473940"
+  },
+  "ulogovaniKorisnik": "a",
+  "nazivFilma": "Senka u Noći",
+  "cenaKarte": 550,
+  "termin": {
+    "$date": "2025-08-02T18:00:00.000Z"
+  },
+  "status": "Odgledano"
+}]

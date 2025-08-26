@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "689a235285c05ce02cb9a8aa"
+  },
+  "username": "elena",
+  "film": "Robot iz Priboja",
+  "ocena": 5,
+  "komentar": "onako"
+},
+{
+  "_id": {
+    "$oid": "689a23f285c05ce02cb9a8b0"
+  },
+  "username": "elena",
+  "film": "Robot iz Priboja",
+  "ocena": 5,
+  "komentar": "2ws"
+},
+{
+  "_id": {
+    "$oid": "689a2926876fb5053a6696c1"
+  },
+  "username": "f",
+  "film": "Robot iz Priboja",
+  "ocena": 5,
+  "komentar": "mid"
+},
+{
+  "_id": {
+    "$oid": "68a362b1b3b7eff335473939"
+  },
+  "username": "a",
+  "film": "Senka u Noći",
+  "ocena": 7,
+  "komentar": "solidan"
+}]

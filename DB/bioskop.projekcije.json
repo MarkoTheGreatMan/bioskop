@@ -1,0 +1,395 @@
+[{
+  "_id": {
+    "$oid": "688dc9abb766bafba6ef89ae"
+  },
+  "naziv": "Senka u Noći",
+  "opis": "Misteriozni triler o novinaru koji istražuje nestanak poznate glumice.",
+  "zanr": "Triler",
+  "trajanje": 112,
+  "reziser": "Nikola Petrović",
+  "glumci": [
+    "Miloš Biković",
+    "Jovana Stojiljković"
+  ],
+  "datumIzlaska": {
+    "$date": "2025-06-15T00:00:00.000Z"
+  },
+  "projekcije": [
+    {
+      "$date": "2025-08-02T18:00:00.000Z"
+    },
+    {
+      "$date": "2025-08-03T20:30:00.000Z"
+    }
+  ],
+  "cenaKarte": 550,
+  "recenzije": [
+    {
+      "korisnik": "ana22",
+      "ocena": 8,
+      "komentar": "Napeto i dobro režirano!"
+    },
+    {
+      "korisnik": "marko77",
+      "ocena": 7,
+      "komentar": "Dobar film, kraj malo slabiji."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "688dc9abb766bafba6ef89af"
+  },
+  "naziv": "Let iznad Balkana",
+  "opis": "Inspirativna drama o pilotu tokom Drugog svetskog rata.",
+  "zanr": "Drama",
+  "trajanje": 129,
+  "reziser": "Lana Ristić",
+  "glumci": [
+    "Nebojša Glogovac",
+    "Milena Radulović"
+  ],
+  "datumIzlaska": {
+    "$date": "2025-05-10T00:00:00.000Z"
+  },
+  "projekcije": [
+    {
+      "$date": "2025-08-02T15:00:00.000Z"
+    },
+    {
+      "$date": "2025-08-04T17:45:00.000Z"
+    }
+  ],
+  "cenaKarte": 600,
+  "recenzije": [
+    {
+      "korisnik": "dusan88",
+      "ocena": 9,
+      "komentar": "Fantastična gluma!"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "688dc9abb766bafba6ef89b0"
+  },
+  "naziv": "Robot iz Priboja",
+  "opis": "Komedija o robotu koji postaje vozač autobusa u malom mestu.",
+  "zanr": "Komedija",
+  "trajanje": 94,
+  "reziser": "Zoran Spasić",
+  "glumci": [
+    "Nikola Kojo",
+    "Sloboda Mićalović"
+  ],
+  "datumIzlaska": {
+    "$date": "2025-03-21T00:00:00.000Z"
+  },
+  "projekcije": [
+    {
+      "$date": "2025-08-02T19:00:00.000Z"
+    },
+    {
+      "$date": "2025-08-05T21:00:00.000Z"
+    }
+  ],
+  "cenaKarte": 500,
+  "recenzije": [
+    {
+      "korisnik": "vanja.k",
+      "ocena": 6,
+      "komentar": "Zabavno, ali pomalo predvidivo."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "688dc9abb766bafba6ef89b1"
+  },
+  "naziv": "Krv i Sneg",
+  "opis": "Krimi drama o porodičnom obračunu u planinskom selu.",
+  "zanr": "Krimi",
+  "trajanje": 105,
+  "reziser": "Milutin Zdravković",
+  "glumci": [
+    "Aleksandar Radojičić",
+    "Tamara Dragičević"
+  ],
+  "datumIzlaska": {
+    "$date": "2025-02-11T00:00:00.000Z"
+  },
+  "projekcije": [
+    {
+      "$date": "2025-08-03T20:00:00.000Z"
+    },
+    {
+      "$date": "2025-08-06T22:15:00.000Z"
+    }
+  ],
+  "cenaKarte": 650,
+  "recenzije": [
+    {
+      "korisnik": "jelena_93",
+      "ocena": 9,
+      "komentar": "Odlična atmosfera i režija."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "688dc9abb766bafba6ef89b2"
+  },
+  "naziv": "Beogradski San",
+  "opis": "Ljubavna priča smeštena u savremeni Beograd.",
+  "zanr": "Romansa",
+  "trajanje": 118,
+  "reziser": "Ivana Jović",
+  "glumci": [
+    "Miloš Timotijević",
+    "Nina Janković"
+  ],
+  "datumIzlaska": {
+    "$date": "2025-01-14T00:00:00.000Z"
+  },
+  "projekcije": [
+    {
+      "$date": "2025-08-02T16:00:00.000Z"
+    },
+    {
+      "$date": "2025-08-05T19:30:00.000Z"
+    }
+  ],
+  "cenaKarte": 520,
+  "recenzije": [
+    {
+      "korisnik": "mila98",
+      "ocena": 7,
+      "komentar": "Lepa priča, dobar soundtrack."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "688dc9abb766bafba6ef89b3"
+  },
+  "naziv": "Planeta 13",
+  "opis": "Naučnofantastični spektakl o otkriću nove planete.",
+  "zanr": "SF",
+  "trajanje": 135,
+  "reziser": "Dragan Petrović",
+  "glumci": [
+    "Vuk Kostić",
+    "Ivana Dudić"
+  ],
+  "datumIzlaska": {
+    "$date": "2025-04-03T00:00:00.000Z"
+  },
+  "projekcije": [
+    {
+      "$date": "2025-08-02T21:00:00.000Z"
+    },
+    {
+      "$date": "2025-08-06T18:00:00.000Z"
+    }
+  ],
+  "cenaKarte": 700,
+  "recenzije": [
+    {
+      "korisnik": "markomk",
+      "ocena": 8,
+      "komentar": "Vizuelno spektakularno!"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "688dc9abb766bafba6ef89b4"
+  },
+  "naziv": "Mali Grad, Velike Tajne",
+  "opis": "Dokumentarni film o zaboravljenim srpskim varošima.",
+  "zanr": "Dokumentarni",
+  "trajanje": 88,
+  "reziser": "Jelena Pavlović",
+  "glumci": [],
+  "datumIzlaska": {
+    "$date": "2025-06-01T00:00:00.000Z"
+  },
+  "projekcije": [
+    {
+      "$date": "2025-08-03T14:00:00.000Z"
+    }
+  ],
+  "cenaKarte": 450,
+  "recenzije": [
+    {
+      "korisnik": "gledalacX",
+      "ocena": 10,
+      "komentar": "Inspirativno i edukativno."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "688dc9abb766bafba6ef89b5"
+  },
+  "naziv": "Ulica Snova",
+  "opis": "Muzikal o mladim umetnicima u haotičnom gradu.",
+  "zanr": "Muzikal",
+  "trajanje": 123,
+  "reziser": "Sara Krstić",
+  "glumci": [
+    "Stefan Kapičić",
+    "Isidora Simijonović"
+  ],
+  "datumIzlaska": {
+    "$date": "2025-07-01T00:00:00.000Z"
+  },
+  "projekcije": [
+    {
+      "$date": "2025-08-02T17:00:00.000Z"
+    },
+    {
+      "$date": "2025-08-04T20:00:00.000Z"
+    }
+  ],
+  "cenaKarte": 580,
+  "recenzije": [
+    {
+      "korisnik": "dario.d",
+      "ocena": 7,
+      "komentar": "Lep koncept, dobra muzika."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "688dc9abb766bafba6ef89b6"
+  },
+  "naziv": "Poslednji Signal",
+  "opis": "Apokaliptični triler o poslednjim danima čovečanstva.",
+  "zanr": "Triler",
+  "trajanje": 142,
+  "reziser": "Milan Arsić",
+  "glumci": [
+    "Goran Bogdan",
+    "Ana Sofrenović"
+  ],
+  "datumIzlaska": {
+    "$date": "2025-07-20T00:00:00.000Z"
+  },
+  "projekcije": [
+    {
+      "$date": "2025-08-02T22:00:00.000Z"
+    },
+    {
+      "$date": "2025-08-03T22:00:00.000Z"
+    }
+  ],
+  "cenaKarte": 750,
+  "recenzije": [
+    {
+      "korisnik": "miki09",
+      "ocena": 8,
+      "komentar": "Intenzivan do samog kraja."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "688dc9abb766bafba6ef89b7"
+  },
+  "naziv": "Leto u Prokuplju",
+  "opis": "Topla komedija o prijateljstvu i odrastanju.",
+  "zanr": "Komedija",
+  "trajanje": 96,
+  "reziser": "Aleksandar Ilić",
+  "glumci": [
+    "Nenad Jezdić",
+    "Bojana Novaković"
+  ],
+  "datumIzlaska": {
+    "$date": "2025-05-30T00:00:00.000Z"
+  },
+  "projekcije": [
+    {
+      "$date": "2025-08-02T12:00:00.000Z"
+    },
+    {
+      "$date": "2025-08-04T14:30:00.000Z"
+    }
+  ],
+  "cenaKarte": 500,
+  "recenzije": [
+    {
+      "korisnik": "lena44",
+      "ocena": 9,
+      "komentar": "Toplo, smešno i iskreno."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "688dc9abb766bafba6ef89b8"
+  },
+  "naziv": "Tišina u Galeriji",
+  "opis": "Psihološki triler o umetničkoj pljački.",
+  "zanr": "Triler",
+  "trajanje": 103,
+  "reziser": "Teodora Đorđević",
+  "glumci": [
+    "Petar Benčina",
+    "Katarina Radivojević"
+  ],
+  "datumIzlaska": {
+    "$date": "2025-06-28T00:00:00.000Z"
+  },
+  "projekcije": [
+    {
+      "$date": "2025-08-05T19:00:00.000Z"
+    },
+    {
+      "$date": "2025-08-07T21:00:00.000Z"
+    }
+  ],
+  "cenaKarte": 580,
+  "recenzije": [
+    {
+      "korisnik": "igor007",
+      "ocena": 8,
+      "komentar": "Napetost od početka do kraja."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "688dc9abb766bafba6ef89b9"
+  },
+  "naziv": "Kad Padne Sneg",
+  "opis": "Drama o porodici rastrgnutoj između tradicije i savremenog života.",
+  "zanr": "Drama",
+  "trajanje": 110,
+  "reziser": "Ivica Popović",
+  "glumci": [
+    "Sergej Trifunović",
+    "Nataša Ninković"
+  ],
+  "datumIzlaska": {
+    "$date": "2025-01-26T00:00:00.000Z"
+  },
+  "projekcije": [
+    {
+      "$date": "2025-08-04T18:30:00.000Z"
+    },
+    {
+      "$date": "2025-08-06T20:15:00.000Z"
+    }
+  ],
+  "cenaKarte": 600,
+  "recenzije": [
+    {
+      "korisnik": "sofijaZ",
+      "ocena": 9,
+      "komentar": "Emotivno i duboko."
+    }
+  ]
+}]

@@ -1,0 +1,51 @@
+[{
+  "_id": {
+    "$oid": "6889088df4f23b92cb59765b"
+  },
+  "ime": "Marko",
+  "prezime": "Petrovic",
+  "email": "marko@gmail.com",
+  "telefon": "066666666",
+  "adresa": "Dimitrija Tucovica",
+  "omiljeniZanrovi": [
+    "Triler",
+    "Naučna fantastika"
+  ],
+  "username": "a",
+  "password": "a",
+  "type": "korisnik"
+},
+{
+  "_id": {
+    "$oid": "688dca0f8ebf1c1ccb7ca191"
+  },
+  "ime": "E",
+  "prezime": "Sladojevic",
+  "email": "elena.sladojevic@gmail.com",
+  "telefon": "123",
+  "adresa": "555",
+  "omiljeniZanrovi": [
+    "Akcija",
+    "Drama"
+  ],
+  "username": "elena",
+  "password": "123",
+  "type": "korisnik"
+},
+{
+  "_id": {
+    "$oid": "68a363b3b3b7eff335473947"
+  },
+  "ime": "Teodor",
+  "prezime": "Mihailovic",
+  "email": "teodor@gmail.com",
+  "telefon": "065555555",
+  "adresa": "Josipa Broza",
+  "omiljeniZanrovi": [
+    "Naučna fantastika",
+    "Horor"
+  ],
+  "username": "Teo",
+  "password": "drazen123",
+  "type": "korisnik"
+}]

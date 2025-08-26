@@ -1,0 +1,80 @@
+<div class="container text-center">
+<h1>🎬 Sve projekcije</h1>
+
+<form (ngSubmit)="filtriraj()" class="search-form">
+  <input type="text" placeholder="Naziv filma" [(ngModel)]="filter.naziv" name="naziv" />
+
+  <input type="text" placeholder="Opis" [(ngModel)]="filter.opis" name="opis" />
+
+  <input type="text" placeholder="Žanr" [(ngModel)]="filter.zanr" name="zanr" />
+
+  <input type="number" placeholder="Trajanje (max)" [(ngModel)]="filter.trajanje" name="trajanje" />
+
+  <input type="text" placeholder="Režiser" [(ngModel)]="filter.reziser" name="reziser" />
+
+  <input type="text" placeholder="Glumac" [(ngModel)]="filter.glumci" name="glumci" />
+
+  <input type="date" placeholder="Datum izlaska" [(ngModel)]="filter.datumIzlaska" name="datumIzlaska" />
+
+  <input type="date" placeholder="Datum projekcije" [(ngModel)]="filter.datumProjekcije" name="datumProjekcije" />
+
+  <input type="number" placeholder="Cena karte (max)" [(ngModel)]="filter.cenaKarte" name="cenaKarte" />
+
+  <!--<input type="text" placeholder="Recenzija (deo komentara)" [(ngModel)]="filter.recenzija" name="recenzija" />-->
+
+  <button class="btn-primary" type="submit">Pretraži</button>
+</form>
+  <p class="lead">Izaberite film i termin koji vam odgovara!</p>
+
+
+  <div *ngIf="filt.length > 0; else nema">
+    <table class="projekcija-table" >
+  <thead>
+    <tr>
+      <th>🎞️ Film</th>
+      <th>🎬 Opis</th>
+      <th>🗓️ Datum izlaska</th>
+      <th>🎭 Žanr</th>
+      <th>🎬 Režiser</th>
+      <th>👥 Glumci</th>
+      <th>⏱️ Trajanje</th>
+      <th>📅 Termini projekcija</th>
+      <th>💰 Cena karte</th>
+      <th>💬 Ocene</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let film of filt">
+      <td>{{ film.naziv }}</td>
+      <td>{{film.opis}}</td>
+      <td>{{ film.datumIzlaska | date: 'dd.MM.yyyy' }}</td>
+      <td>{{ film.zanr || '—' }}</td>
+      <td>{{ film.reziser || '—' }}</td>
+      <td>
+        <ul class="glumci-lista" style="list-style:none; padding-left:0; margin:0;">
+          <li *ngFor="let g of film.glumci">{{ g }}</li>
+        </ul>
+      </td>
+      <td>{{ film.trajanje || '—' }} min</td>
+      <td>
+        <ul class="projekcije-lista" style="list-style:none; padding-left:0; margin:0;">
+          <li *ngFor="let termin of film.projekcije">
+  <button class="btn btn-secondary" (click)="rezervisi(film, termin)">
+    {{ termin | date: 'dd.MM.yyyy HH:mm' }}
+  </button>
+</li>
+        </ul>
+      </td>
+      <td>{{ film.cenaKarte }} RSD</td>
+      <td><button class="btn btn-primary" (click)="pregledaj(film)">
+     Pregled
+  </button></td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+
+  <ng-template #nema>
+    <p class="tekst-center">Trenutno nema dostupnih projekcija.</p>
+  </ng-template>
+</div>

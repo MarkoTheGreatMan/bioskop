@@ -1,0 +1,34 @@
+<div class="container mt-4">
+  <h2>Moje Rezervacije</h2>
+
+  <div *ngIf="rezervacije.length === 0">
+    <p>Nema rezervacija.</p>
+  </div>
+
+  <div *ngFor="let rez of rezervacije" class="card mb-3">
+    <div class="card-body">
+      <h5 class="card-title">{{ rez.nazivFilma }}</h5>
+      <p class="card-text">
+        <strong>Termin:</strong> {{ rez.termin | date:'medium' }}<br>
+        <strong>Cena karte:</strong> {{ rez.cenaKarte }} RSD<br>
+        <strong>Status:</strong> {{ rez.status }}
+      </p>
+      <div class="buttons" style="justify-content: center; flex-wrap: wrap;">
+      <button class="btn btn-primary me-2" (click)="promeniStatus(rez, 'Odgledano')">Odgledano</button>
+      <button class="btn btn-secondary" (click)="promeniStatus(rez, 'Otkazano')">Otkazano</button>
+      <button class="btn btn-secondary" (click)="promeniStatus(rez, 'Rezervisano')">Rezervisano</button>
+      <button class="btn btn-primary me-2" *ngIf="rez.status === 'Odgledano'" (click)="obrisi(rez)">
+    Obriši
+  </button>
+  <button class="btn btn-primary me-2" *ngIf="rez.status === 'Odgledano'" (click)="oceni(rez)">
+    Oceni
+  </button>
+    </div>
+    </div>
+    <hr>
+  </div>
+
+  <div class="mt-4">
+    <h4>Ukupna cena: {{ ukupnaCena }} RSD</h4>
+  </div>
+</div>
